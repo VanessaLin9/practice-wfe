@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar_home"></div>
+    <div class="sidebar_menu">
+      <div class="sidebar_menu_link sidebar_menu_link--frame sidebar_menu_link--active">
+        <img
+          src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/frame.svg"
+          alt="frame" />
+      </div>
+      <div class="sidebar_menu_link sidebar_menu_link--folder">
+        <img
+          src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/folder.svg"
+          alt="folder" />
+      </div>
+      <div class="sidebar_menu_link sidebar_menu_link--mail">
+        <img
+          src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/mail.svg"
+          alt="mail" />
+      </div>
+      <!-- darkmode toggle -->
+      <div class="sidebar_menu_link">
+        <label class="sidebar_darkmode_label" for="dark_mode_toggle"></label>
+        <input type="checkbox"
+        class="sidebar_darkmode_input" id="dark_mode_toggle">
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <h1 class="main_title">Campaign</h1>
+
+    <table class="main_table">
+      <thead>
+        <tr class="table_header table_row">
+          <th class="table_cell table_cell--checkbox">
+            <input type="checkbox">
+          </th>
+          <th class="table_cell table_cell--id">ID</th>
+          <th class="table_cell table_cell--name">名字</th>
+          <th class="table_cell table_cell--advertiser">
+            <span class="cell_advertiser_line">Advertiser</span>
+            <span class="cell_advertiser_line cell_advertiser_line--group">Group</span>
+          </th>
+          <th class="table_cell table_cell--description">Description</th>
+          <th class="table_cell table_cell--price">
+            <span>Price</span>
+            <img class="header_cell_icon header_cell_icon--right"
+            src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/sort.svg" />
+          </th>
+          <th class="table_cell table_cell--starttime">
+            <span>Start Time</span>
+            <img class="header_cell_icon header_cell_icon--right"
+              src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/sort.svg" />
+          </th>
+          <th class="table_cell table_cell--endtime">
+            <span>End Time</span>
+            <img class="header_cell_icon header_cell_icon--right"
+              src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/sort.svg" />
+          </th>
+          <th class="table_cell table_cell--action">Action</th>
+        </tr>
+      </thead>
+
+      <tbody class="table_body">
+        <tr class="table_row">
+          <td class="table_cell table_cell--checkbox">
+            <input type="checkbox" />
+          </td>
+          <td class="table_cell table_cell--id">ID</td>
+          <td class="table_cell table_cell--name">Name</td>
+          <td class="table_cell table_cell--advertiser">
+            <span class="cell_advertiser_line">Advertiser</span>
+            <span class="cell_advertiser_line cell_advertiser_line--group">Group</span>
+          </td>
+          <td class="table_cell table_cell--description">Description</td>
+          <td class="table_cell table_cell--price">Price</td>
+          <td class="table_cell table_cell--starttime">Start Time</td>
+          <td class="table_cell table_cell--endtime">End Time</td>
+          <td class="table_cell table_cell--action">
+            <img class="cell_action_icon"
+              src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/menu.svg"
+              id="action_input_1" alt="menu" />
+            <!-- menu -->
+            <div class="action_menu hidden" role="dialog" aria-modal="true" aria-labelledby="action_input_1" id="action_menu_1">
+              <menu class="menu_body">
+                  <menuitem class="menu_item">
+                    <img
+                      src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/duplicate.svg"
+                      class="menu_item_icon" />
+                    <span>Duplicate</span>
+                  </menuitem>
+                  <menuitem class="menu_item">
+                    <img
+                      src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/edit.svg"
+                      class="menu_item_icon" />
+                    <span>Edit</span>
+                  </menuitem>
+                  <menuitem class="menu_item">
+                    <img
+                      src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/delete.svg"
+                      class="menu_item_icon" />
+                    <span>Delete</span>
+                  </menuitem>
+              </menu>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
